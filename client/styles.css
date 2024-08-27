@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e1e1e; /* Dark background */
+    color: #f0f0f0; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #00bfff; /* Light blue color for headers */
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 2px;
+    margin: 20px auto;
+    max-width: 310px;
+    background-color: #1a1a1a; /* Dark background for the board */
+    border: 2px solid #00bfff; /* Slight blue border */
+}
+
+#board div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a; /* Slightly lighter dark color for cells */
+    color: #f0f0f0; /* Light text color */
+    border: 1px solid #333; /* Darker border for cells */
+}
+
+#board div:nth-child(odd) {
+    background-color: #1f1f1f; /* Slightly different color for alternating cells */
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+#characterSelection, #moveOptions, #moveHistory {
+    margin-top: 20px;
+}
+
+#characters, #moves {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#characters div, #moves button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #444;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #333; /* Dark background for selection elements */
+    color: #f0f0f0; /* Light text color */
+}
+
+#moves button {
+    background-color: #0056b3; /* Slight blue color for move buttons */
+}
+
+#moves button:hover {
+    background-color: #004494; /* Darker blue on hover */
+}
+
+#moveHistory ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 300px;
+    margin: auto;
+}
+
+#moveHistory li {
+    background-color: #333;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+#status {
+    margin-top: 20px;
+    font-weight: bold;
+}

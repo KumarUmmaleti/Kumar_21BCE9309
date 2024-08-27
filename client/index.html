@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn-based Chess-like Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Turn-based Chess-like Game</h1>
+
+    <div id="board"></div>
+
+    <div id="controls">
+        <div id="currentPlayer">Current Player: A</div>
+        <div id="characterSelection">
+            <h2>Characters</h2>
+            <div id="characters"></div>
+        </div>
+        <div id="moveOptions">
+            <h2>Available Moves</h2>
+            <div id="moves"></div>
+        </div>
+        <div id="moveHistory">
+            <h2>Move History</h2>
+            <ul id="historyList">
+                <!-- Move history will be appended here -->
+            </ul>
+        </div>
+        <div id="status">Waiting for game initialization...</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
